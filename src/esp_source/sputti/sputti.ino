@@ -1,7 +1,3 @@
-/*
-    Based on Neil Kolban example for IDF: https://github.com/nkolban/esp32-snippets/blob/master/cpp_utils/tests/BLE%20Tests/SampleWrite.cpp
-    Ported to Arduino ESP32 by Evandro Copercini
-*/
 
 #include <BLEDevice.h>
 #include <BLEUtils.h>
@@ -22,10 +18,9 @@
 #define LED_COUNT 14 //LED COUNT
 Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ400);
 
-#define VERSION "V2"
+#define VERSION "V4"
 #define WIFI_PW "SPUTTISPUTTI"
-// See the following for generating UUIDs:
-// https://www.uuidgenerator.net/
+
 
 #define SERVICE_UUID        "4fafc201-1fb5-459e-8fcc-c5c9c331914b"
 #define CHARACTERISTIC_UUID "beb5483e-36e1-4688-b7f5-ea07361b26a8"
@@ -306,6 +301,16 @@ void loop() {
 if(animation == 7){
   Twinkle(0xff, 0, 0, 10, 100, false);
   }
+
+if(animation == 100){
+  btStop();
+  animation = 1;
+  
+  WiFi.mode( WIFI_MODE_NULL );
+  Serial.println("-- SHITDOWN WIFI --");
+  wifi_state = false;
+  }
+  
 if(wifi_state && animation != 99){
   WiFi.mode( WIFI_MODE_NULL );
   Serial.println("-- SHITDOWN WIFI --");
