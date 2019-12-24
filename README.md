@@ -31,3 +31,4 @@ Send to the charakteristik `beb5483e-36e1-4688-b7f5-ea07361b26a8`
 * `7`
 
 * `99` - OTA UPDATE ENABLE
+* `100` - DISBALE BLE AND WIFI AND SHOW A RAINBOW ANIMATION
