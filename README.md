@@ -37,6 +37,12 @@ Send to the charakteristik `beb5483e-36e1-4688-b7f5-ea07361b26a8`
 
 # FINAL RESULT
 
+## VIDEO
+
+[![Alt text](https://img.youtube.com/vi/iZrASSpE8TM/0.jpg)](https://www.youtube.com/watch?v=iZrASSpE8TM)
+
+
+
 ## 3D Printed back case for holding the battery and powerswitch
 
 ![Gopher image](src/schematic/2019-12-20 13.58.36.jpg)
