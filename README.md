@@ -1,5 +1,5 @@
 # SPUT_BADGE
-A colorful BLE badge for the 36c3 event 2019
+A colorful BLE badge for the 36c3 event 2019 usign BLE for control and communication with other SPUTTI´s.
 
 
 
